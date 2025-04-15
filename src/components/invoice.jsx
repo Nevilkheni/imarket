@@ -28,7 +28,7 @@ const Invoice = () => {
       <p><strong>Total Amount Paid:</strong> ₹{parseFloat(invoiceData.totalAmount).toFixed(2)}</p>
       <p><strong>Date:</strong> {invoiceData.expDate}</p>
 
-      <button className="back-btn" onClick={() => navigate("/shop")}>🛒 Back to Shop</button>
+      <button className="back-btn" onClick={() => navigate("/Product")}>🛒 Back to Shop</button>
     </div>
   );
 };

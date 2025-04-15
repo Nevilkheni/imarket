@@ -15,7 +15,7 @@ const Login = () => {
     if (email === "iphone@gmail.com" && password === "nnn") {
       localStorage.setItem("loggedIn", "true");
       alert("Login Successful!");
-      navigate("/shop"); 
+      navigate("/Product");
     } else {
       setError("Invalid email or password. Try again!");
     }

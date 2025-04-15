@@ -1,0 +1,22 @@
+.footer-section {
+    /* background: linear-gradient(135deg, #b3d4ef, #d4eaf7, #b3d4ef); */
+    color: #333;
+    line-height: 1.5rem;
+   
+    width: 100%;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-section p {
+    text-align: left;
+    font-size: 0.7em;
+    padding: 10px 100px ;
+    animation: fadeIn 1s ease-in-out;
+  }
+  @media screen and (max-width: 600px) {
+    .footer-section p {
+      line-height: normal;
+      padding: 15px;
+      width: 100%;
+    }}
+  
