@@ -80,7 +80,7 @@ const Cart = () => {
             <h2>Total: ₹{totalAmount.toLocaleString()}</h2>
           </div>
 
-          <button className="back" onClick={() => navigate("/shop")}>← Back to Shop</button>
+          <button className="back" onClick={() => navigate("/product")}>← Back to Shop</button>
 
           {cartItems.length > 0 && (
             <button className="pay-now" onClick={() => navigate("/payment")}>💳 Proceed to Payment</button>

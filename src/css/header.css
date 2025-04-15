@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #b3d4ef, #d4eaf7, #b3d4ef);
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .header h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  
+  
+  .header h1 img{
+    width: 30px;
+    height: 30px;
+    
+  }
+  
