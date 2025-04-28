@@ -1,10 +1,9 @@
-// src/components/Mac.js
 
 import React, { useState, useEffect } from "react";
 import macProducts from "../data/mac";
 import Header from "./header";
 import Footer from "./footer";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom"; 
 import "../css/product.css";
 
 const Mac = () => {
