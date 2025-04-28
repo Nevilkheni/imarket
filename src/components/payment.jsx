@@ -39,7 +39,7 @@ const Payment = () => {
         <h3>Saved Cards</h3>
         {savedCards.map((card) => (
           <div key={card.id} className={`saved-card ${selectedCard?.id === card.id ? "selected" : ""}`} onClick={() => setSelectedCard(card)}>
-            <img src={`/images/${card.logo}`} alt=".  " />
+            <img src={`/images/z${card.logo}`} alt=".  " />
             <div>
               <p><strong>{card.name}</strong></p>
               <p>{card.number} | Exp: {card.exp}</p>

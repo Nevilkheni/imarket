@@ -62,7 +62,7 @@ const Cart = () => {
                   </td>
                   <td>{item.productname}</td>
                   <td>₹{item.price.toLocaleString()}</td>
-                  <td>
+                  <td className="btn">
                     <button className="qty-btn" onClick={() => updateQuantity(item.productid, -1)}>-</button>
                     <span className="qty">{item.qty}</span>
                     <button className="qty-btn" onClick={() => updateQuantity(item.productid, 1)}>+</button>
