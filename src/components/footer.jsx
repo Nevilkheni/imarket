@@ -11,25 +11,25 @@ function Footer() {
             <h3>Shop and Learn</h3>
             <ul>
               <li>
-                <Link to="#">Store</Link>
+                <Link href="#">Store</Link>
               </li>
               <li>
-                <Link to="#">Mac</Link>
+                <Link href="mac.jsx">Mac</Link>
               </li>
               <li>
-                <Link to="#">iPad</Link>
+                <Link href="ipad.jsx">iPad</Link>
               </li>
               <li>
-                <Link to="#">iPhone</Link>
+                <Link href="product.jsx">iPhone</Link>
               </li>
               <li>
-                <Link to="#">Watch</Link>
+                <Link href="watch.jsx">Watch</Link>
               </li>
               <li>
-                <Link to="#">AirPods</Link>
+                <Link href="airpods.jsx">AirPods</Link>
               </li>
               <li>
-                <Link to="#">Accessories</Link>
+                <Link href="accessories.jsx">Accessories</Link>
               </li>
               <li>
                 <Link to="#">Gift Cards</Link>
