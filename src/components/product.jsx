@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom"; 
 import products from "../data/product";
 import "../css/product.css";
 import Footer from "./footer";
-import Header from "./hearder";
-import Deatail from "./deatail";
+import Header from "./header";
+import Detail from "./deatail";  
 
 const Product = () => {
   const navigate = useNavigate();
@@ -58,12 +58,12 @@ const Product = () => {
         <p>Explore our latest products</p>
       </div>
       <div className="product-section">
-        <a href="/product"><button>Phone</button></a>
-        <a href="/mac"><button>Mac</button></a>
-        <a href="/ipad"><button>iPad</button></a>
-        <a href="/watch"><button>Watch</button></a>
-        <a href="/airpods"><button>AirPods</button></a>
-        <a href="/accessories"><button>Accessories</button></a>
+        <Link to="/product"><button>Phone</button></Link>
+        <Link to="/mac"><button>Mac</button></Link>
+        <Link to="/ipad"><button>iPad</button></Link>
+        <Link to="/watch"><button>Watch</button></Link>
+        <Link to="/airpods"><button>AirPods</button></Link>
+        <Link to="/accessories"><button>Accessories</button></Link>
       </div>
 
       <div className="product-grid">
@@ -78,7 +78,7 @@ const Product = () => {
         ))}
       </div>
 
-      <Deatail />
+      <Detail />
       <div>
         <Footer />
       </div>

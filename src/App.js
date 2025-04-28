@@ -6,7 +6,7 @@ import Payment from "./components/payment.jsx";
 import Invoice from "./components/invoice.jsx";
 import Product from "./components/product.jsx";
 import Footer from "./components/footer.jsx";
-import Header from "./components/hearder.jsx";
+import Header from "./components/header.jsx";
 import Deatail from "./components/deatail.jsx";
 import Mac from "./components/mac.jsx";
 import Ipad from "./components/ipad.jsx";
@@ -28,8 +28,8 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/invoice" element={<Invoice />} />
         <Route path="/Deatels" element={<Deatail/>} />
-        <Route path="Mac" element={<Mac/>}/>
-        <Route path="Ipad" element={<Ipad/>}/>
+        <Route path="/Mac" element={<Mac/>}/>
+        <Route path="/Ipad" element={<Ipad/>}/>
         <Route path="/watch" element={<Watch />} />
         <Route path="/airpods" element={<AirPods />} />
         <Route path="/accessories" element={<Accessories />}/>

@@ -1,125 +1,125 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom"; 
 import "../css/footer.css";
 
 function Footer() {
   return (
     <div>
-        
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-column">
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-column">
             <h3>Shop and Learn</h3>
             <ul>
               <li>
-                <a href="#">Store</a>
+                <Link to="#">Store</Link>
               </li>
               <li>
-                <a href="#">Mac</a>
+                <Link to="#">Mac</Link>
               </li>
               <li>
-                <a href="#">iPad</a>
+                <Link to="#">iPad</Link>
               </li>
               <li>
-                <a href="#">iPhone</a>
+                <Link to="#">iPhone</Link>
               </li>
               <li>
-                <a href="#">Watch</a>
+                <Link to="#">Watch</Link>
               </li>
               <li>
-                <a href="#">AirPods</a>
+                <Link to="#">AirPods</Link>
               </li>
               <li>
-                <a href="#">Accessories</a>
+                <Link to="#">Accessories</Link>
               </li>
               <li>
-                <a href="#">Gift Cards</a>
+                <Link to="#">Gift Cards</Link>
               </li>
             </ul>
           </div>
-          <div class="footer-column">
+          <div className="footer-column">
             <h3>Account</h3>
             <ul>
               <li>
-                <a href="#">Manage Your Apple ID</a>
+                <Link to="#">Manage Your Apple ID</Link>
               </li>
               <li>
-                <a href="#">Apple Store Account</a>
+                <Link to="#">Apple Store Account</Link>
               </li>
               <li>
-                <a href="#">iCloud.com</a>
+                <Link to="#">iCloud.com</Link>
               </li>
             </ul>
           </div>
-          <div class="footer-column">
+          <div className="footer-column">
             <h3>Apple Store</h3>
             <ul>
               <li>
-                <a href="#">Find a Store</a>
+                <Link to="#">Find a Store</Link>
               </li>
               <li>
-                <a href="#">Genius Bar</a>
+                <Link to="#">Genius Bar</Link>
               </li>
               <li>
-                <a href="#">Today at Apple</a>
+                <Link to="#">Today at Apple</Link>
               </li>
               <li>
-                <a href="#">Ways to Buy</a>
+                <Link to="#">Ways to Buy</Link>
               </li>
               <li>
-                <a href="#">Order Status</a>
+                <Link to="#">Order Status</Link>
               </li>
               <li>
-                <a href="#">Shopping Help</a>
+                <Link to="#">Shopping Help</Link>
               </li>
             </ul>
           </div>
-          <div class="footer-column">
+          <div className="footer-column">
             <h3>Apple Values</h3>
             <ul>
               <li>
-                <a href="#">Accessibility</a>
+                <Link to="#">Accessibility</Link>
               </li>
               <li>
-                <a href="#">Education</a>
+                <Link to="#">Education</Link>
               </li>
               <li>
-                <a href="#">Environment</a>
+                <Link to="#">Environment</Link>
               </li>
               <li>
-                <a href="#">Privacy</a>
+                <Link to="#">Privacy</Link>
               </li>
               <li>
-                <a href="#">Supply Chain</a>
+                <Link to="#">Supply Chain</Link>
               </li>
             </ul>
           </div>
-          <div class="footer-column">
+          <div className="footer-column">
             <h3>About Apple</h3>
             <ul>
               <li>
-                <a href="#">Newsroom</a>
+                <Link to="#">Newsroom</Link>
               </li>
               <li>
-                <a href="#">Apple Leadership</a>
+                <Link to="#">Apple Leadership</Link>
               </li>
               <li>
-                <a href="#">Career Opportunities</a>
+                <Link to="#">Career Opportunities</Link>
               </li>
               <li>
-                <a href="#">Investors</a>
+                <Link to="#">Investors</Link>
               </li>
               <li>
-                <a href="#">Events</a>
+                <Link to="#">Events</Link>
               </li>
               <li>
-                <a href="#">Contact Apple</a>
+                <Link to="#">Contact Apple</Link>
               </li>
             </ul>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

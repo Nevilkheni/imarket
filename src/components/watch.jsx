@@ -1,7 +1,10 @@
+// src/components/Watch.js
+
 import React, { useState, useEffect } from "react";
 import watchProducts from "../data/watch";
-import Header from "./hearder";
+import Header from "./header";
 import Footer from "./footer";
+import { Link } from "react-router-dom"; // Import Link from React Router
 import "../css/product.css";
 
 const Watch = () => {
@@ -45,24 +48,24 @@ const Watch = () => {
         <h2>Apple Watch Collection</h2>
       </div>
       <div className="product-section">
-        <a href="/product">
+        <Link to="/product">
           <button>Phone</button>
-        </a>
-        <a href="/mac">
+        </Link>
+        <Link to="/mac">
           <button>Mac</button>
-        </a>
-        <a href="/ipad">
+        </Link>
+        <Link to="/ipad">
           <button>iPad</button>
-        </a>
-        <a href="/watch">
+        </Link>
+        <Link to="/watch">
           <button>Watch</button>
-        </a>
-        <a href="/airpods">
+        </Link>
+        <Link to="/airpods">
           <button>AirPods</button>
-        </a>
-        <a href="/accessories">
+        </Link>
+        <Link to="/accessories">
           <button>Accessories</button>
-        </a>
+        </Link>
       </div>
       <div className="product-grid">
         {watchProducts.map((item) => (
@@ -93,20 +96,17 @@ const Watch = () => {
         <h3>Fitness Motivation</h3>
         <p>
           Close your Activity Rings every day and reach your goals with
-          personalized coaching, workout tracking, and advanced metrics —
-          whether you're walking or training like a pro.
+          personalized coaching, workout tracking, and advanced metrics — whether you're walking or training like a pro.
         </p>
 
         <h3>Stay Connected</h3>
         <p>
-          Get calls, messages, and notifications on the go. With cellular
-          models, you can stay in touch even when your iPhone isn't nearby.
+          Get calls, messages, and notifications on the go. With cellular models, you can stay in touch even when your iPhone isn't nearby.
         </p>
 
         <h3>Safety First</h3>
         <p>
-          Features like Crash Detection, Fall Detection, Emergency SOS, and
-          heart alerts provide peace of mind — for you and your loved ones.
+          Features like Crash Detection, Fall Detection, Emergency SOS, and heart alerts provide peace of mind — for you and your loved ones.
         </p>
       </div>
 

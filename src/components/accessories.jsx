@@ -1,8 +1,7 @@
-// src/components/Accessories.js
-
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";  
 import accessoriesProducts from "../data/accessories";
-import Header from "./hearder";
+import Header from "./header";  
 import Footer from "./footer";
 import "../css/product.css";
 
@@ -47,24 +46,24 @@ const Accessories = () => {
         <h2>Apple Accessories</h2>
       </div>
       <div className="product-section">
-        <a href="/product">
+        <Link to="/product">
           <button>Phone</button>
-        </a>
-        <a href="/mac">
+        </Link>
+        <Link to="/mac">
           <button>Mac</button>
-        </a>
-        <a href="/ipad">
+        </Link>
+        <Link to="/ipad">
           <button>iPad</button>
-        </a>
-        <a href="/watch">
+        </Link>
+        <Link to="/watch">
           <button>Watch</button>
-        </a>
-        <a href="/airpods">
+        </Link>
+        <Link to="/airpods">
           <button>AirPods</button>
-        </a>
-        <a href="/accessories">
+        </Link>
+        <Link to="/accessories">
           <button>Accessories</button>
-        </a>
+        </Link>
       </div>
       <div className="product-grid">
         {accessoriesProducts.map((item) => (
@@ -81,36 +80,36 @@ const Accessories = () => {
       <div className="accessories-description">
         <h2>Complete Your Apple Experience</h2>
         <p>
-          Apple accessories are designed to work seamlessly with your devices —
-          enhancing performance, functionality, and style. Whether you're
+          Apple accessories are designed to work seamlessly with your devices — 
+          enhancing performance, functionality, and style. Whether you're 
           charging, typing, or protecting, there's an accessory for every need.
         </p>
 
         <h3>Designed for Apple</h3>
         <p>
-          Every accessory is engineered to integrate perfectly with your iPhone,
-          iPad, Mac, and Apple Watch. From MagSafe chargers to Smart Keyboards,
+          Every accessory is engineered to integrate perfectly with your iPhone, 
+          iPad, Mac, and Apple Watch. From MagSafe chargers to Smart Keyboards, 
           these accessories expand what your devices can do.
         </p>
 
         <h3>Productivity Boosters</h3>
         <p>
-          Unlock your full creative and professional potential with tools like
-          the Apple Pencil, Magic Keyboard, or external displays. Perfect for
+          Unlock your full creative and professional potential with tools like 
+          the Apple Pencil, Magic Keyboard, or external displays. Perfect for 
           artists, students, and professionals alike.
         </p>
 
         <h3>Power and Protection</h3>
         <p>
-          Keep your devices charged and secure with premium cases, cables,
-          stands, and power adapters — all built to last with Apple’s quality
+          Keep your devices charged and secure with premium cases, cables, 
+          stands, and power adapters — all built to last with Apple’s quality 
           and attention to detail.
         </p>
 
         <h3>Style Meets Function</h3>
         <p>
-          Apple accessories don’t just perform — they look good too. Match your
-          aesthetic with a variety of finishes, materials, and colors designed
+          Apple accessories don’t just perform — they look good too. Match your 
+          aesthetic with a variety of finishes, materials, and colors designed 
           to complement your Apple gear.
         </p>
       </div>

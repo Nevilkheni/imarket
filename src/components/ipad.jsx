@@ -1,9 +1,8 @@
-// src/components/Mac.js
-
 import React, { useState, useEffect } from "react";
 import ipadProducts from "../data/ipad";
-import Header from "./hearder";
+import Header from "./header";
 import Footer from "./footer";
+import { Link } from "react-router-dom"; 
 import "../css/product.css";
 
 const Ipad = () => {
@@ -44,27 +43,27 @@ const Ipad = () => {
     <>
       <Header />
       <div className="hero-section">
-        <h2>i Pads</h2>
+        <h2>iPads</h2>
       </div>
       <div className="product-section">
-        <a href="/product">
+        <Link to="/product">
           <button>Phone</button>
-        </a>
-        <a href="/mac">
+        </Link>
+        <Link to="/mac">
           <button>Mac</button>
-        </a>
-        <a href="/ipad">
+        </Link>
+        <Link to="/ipad">
           <button>iPad</button>
-        </a>
-        <a href="/watch">
+        </Link>
+        <Link to="/watch">
           <button>Watch</button>
-        </a>
-        <a href="/airpods">
+        </Link>
+        <Link to="/airpods">
           <button>AirPods</button>
-        </a>
-        <a href="/accessories">
+        </Link>
+        <Link to="/accessories">
           <button>Accessories</button>
-        </a>
+        </Link>
       </div>
       <div className="product-grid">
         {ipadProducts.map((item) => (

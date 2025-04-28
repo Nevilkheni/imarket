@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import macProducts from "../data/mac";
-import Header from "./hearder";
+import Header from "./header";
 import Footer from "./footer";
+import { Link } from "react-router-dom"; // Import Link from React Router
 import "../css/product.css";
 
 const Mac = () => {
@@ -47,12 +48,24 @@ const Mac = () => {
         <h2>Mac Products</h2>
       </div>
       <div className="product-section">
-        <a href="/product"><button>Phone</button></a>
-        <a href="/mac"><button>Mac</button></a>
-        <a href="/ipad"><button>iPad</button></a>
-        <a href="/watch"><button>Watch</button></a>
-        <a href="/airpods"><button>AirPods</button></a>
-        <a href="/accessories"><button>Accessories</button></a>
+        <Link to="/product">
+          <button>Phone</button>
+        </Link>
+        <Link to="/mac">
+          <button>Mac</button>
+        </Link>
+        <Link to="/ipad">
+          <button>iPad</button>
+        </Link>
+        <Link to="/watch">
+          <button>Watch</button>
+        </Link>
+        <Link to="/airpods">
+          <button>AirPods</button>
+        </Link>
+        <Link to="/accessories">
+          <button>Accessories</button>
+        </Link>
       </div>
       <div className="product-grid">
         {macProducts.map((item) => (
@@ -66,28 +79,28 @@ const Mac = () => {
         ))}
       </div>
       <div className="mac-description">
-  <h2>Why Choose a Mac?</h2>
-  <p>
-    Mac computers are built for performance, creativity, and security. Whether you’re editing 4K videos, writing code,
-    designing graphics, or just browsing the web, there’s a Mac that fits your workflow.
-  </p>
-  <h3>Powerful Performance</h3>
-  <p>
-    Powered by Apple silicon chips like the M2, M2 Pro, and M3 Max, MacBooks and desktops deliver unmatched speed and efficiency with stunning battery life.
-  </p>
-  <h3>macOS Experience</h3>
-  <p>
-    With macOS, enjoy a seamless experience across your iPhone, iPad, and Apple Watch. Handoff, Universal Clipboard, and iCloud keep everything connected and up to date.
-  </p>
-  <h3>Built to Last</h3>
-  <p>
-    Macs are known for their durability, long-term support, and beautiful design. Combined with world-class displays and quiet operation, they’re a joy to use.
-  </p>
-  <h3>Explore the Range</h3>
-  <p>
-    Whether you prefer the ultra-thin MacBook Air, the powerful MacBook Pro, or the versatility of the Mac Studio or iMac, there's a Mac perfect for your needs.
-  </p>
-</div>
+        <h2>Why Choose a Mac?</h2>
+        <p>
+          Mac computers are built for performance, creativity, and security. Whether you’re editing 4K videos, writing code,
+          designing graphics, or just browsing the web, there’s a Mac that fits your workflow.
+        </p>
+        <h3>Powerful Performance</h3>
+        <p>
+          Powered by Apple silicon chips like the M2, M2 Pro, and M3 Max, MacBooks and desktops deliver unmatched speed and efficiency with stunning battery life.
+        </p>
+        <h3>macOS Experience</h3>
+        <p>
+          With macOS, enjoy a seamless experience across your iPhone, iPad, and Apple Watch. Handoff, Universal Clipboard, and iCloud keep everything connected and up to date.
+        </p>
+        <h3>Built to Last</h3>
+        <p>
+          Macs are known for their durability, long-term support, and beautiful design. Combined with world-class displays and quiet operation, they’re a joy to use.
+        </p>
+        <h3>Explore the Range</h3>
+        <p>
+          Whether you prefer the ultra-thin MacBook Air, the powerful MacBook Pro, or the versatility of the Mac Studio or iMac, there's a Mac perfect for your needs.
+        </p>
+      </div>
 
       <Footer />
     </>
